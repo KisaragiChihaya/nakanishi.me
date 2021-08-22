@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="中西 Nakanishi" />
+  
+  
+  <title>笔记本电脑系统迁移小记 | ナカシマ</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="随笔,原创,随笔," />
+  
+
+  
+  <meta name="description" content="终于不用忍受（可能是）世界上最垃圾的系统了。">
+
+  
+    <link rel="alternate" href="/atom.xml" title="ナカシマ" type="application/atom+xml">
+  
+
+  
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.1/dist/av-min.js" async></script>
+  
+
+  
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  
+
+  
+    <script src="//unpkg.com/valine/dist/Valine.min.js" async></script>
+  
+
+  
+
+  <script>
+  // theme-ad's config script
+  // it can be used in every script
+  
+  window.AD_CONFIG = {
+    leancloud: {"appid":"C508IxCIAzCEPMCp6g5lXaXO-MdYXbMMI","appkey":"qI2DOmnnjcXwIdf4ICUusUD4","comment":true,"count":true,"notify":false},
+    welcome: {"enable":false,"interval":30},
+    start_time: "2020-03-15",
+    passwords: ["null", ],
+    is_post: true,
+    lock: false,
+    author: "中西 Nakanishi",
+    share: {"twitter":true,"facebook":true,"weibo":true,"qq":true,"wechat":true},
+    mathjax: true,
+    page_type: "",
+    root: "/"
+  };
+</script>
+
+  
+<script src="/vendor/sha256.min.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/index.js"></script>
+<script src="/vendor/qrcode.min.js"></script>
+
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/touch-icon.png">
+  
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/styles/components/highlight/highlight.css">
+
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+  <body>
+    <header class="site-header">
+  <div class="site-header-brand">
+    
+      <span class="site-header-brand-title">
+        <a href="/">Nakashima</a>
+      </span>
+    
+    
+      <span class="site-header-brand-motto"> | 中西の島。</span>
+    
+  </div>
+  <div class="site-header-right">
+    <nav class="site-header-navigation">
+      
+        <a href="/" target="_self">首页</a>
+      
+        <a href="/archives/" target="_self">归档</a>
+      
+        <a href="/tags/" target="_self">标签</a>
+      
+        <a href="/categories/" target="_self">分类</a>
+      
+        <a href="/friends/" target="_self">友链</a>
+      
+        <a href="/about/" target="_self">关于</a>
+      
+        <a href="/atom.xml" target="_self">RSS</a>
+      
+    </nav>
+    <div class="site-header-btn">
+      
+        <a href="https://github.com/KisaragiChihaya/" target="_blank" id="site-github">
+          <i class="fa fa-github-alt"></i>
+        </a>
+      
+      <a href="javascript:void(0);" id="site-search">
+        <i class="fa fa-search"></i>
+      </a>
+      <a href="javascript:void(0);" id="site-nav-btn">
+        <i class="fa fa-ellipsis-v"></i>
+      </a>
+    </div>
+  </div>
+</header>
+<nav class="table-content" id="site-nav">
+  <div class="table-content-title">
+    <span>导航</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc">
+      
+        <li class="toc-item">
+          <a href="/" target="_self">
+            首页
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/archives/" target="_self">
+            归档
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/tags/" target="_self">
+            标签
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/categories/" target="_self">
+            分类
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/friends/" target="_self">
+            友链
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/about/" target="_self">
+            关于
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/atom.xml" target="_self">
+            RSS
+          </a>
+        </li>
+      
+    </ol>
+  </div>
+</nav>
+<div id="site-process"></div>
+    <main>
+      
+  <div class="passage">
+  <div class="passage-meta">
+    <span>
+      <i class="fa fa-calendar"></i>2021-08-23
+    </span>
+    
+      <span>
+        | <a href="/categories/%E9%9A%8F%E7%AC%94/"><i class="fa fa-bookmark"></i>随笔</a>
+      </span>
+    
+    
+      <span>
+        | <i class="fa fa-unlock-alt"></i>UNLOCK
+      </span>
+    
+  </div>
+  <h1 class="passage-title">
+    笔记本电脑系统迁移小记
+  </h1>
+  
+  <article class="passage-article">
+    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>相信大部分中国的电脑用户和我一样，从第一次接触电脑开始使用的电脑系统都是 Windows <del>（mac用户请当我没说过这句话）</del>。诚然，微软是个伟大的公司，但是 Windows 却不是个伟大的系统，从中国网民最早接触到的 Windows 3.0，到小学电脑课上接触到的 Windows 95，再到风靡全国的 Windows XP，还有现在网吧最常见的 Windows 7……不管是哪个版本的 Windows，崩溃、死机、蓝屏都与用户的日常使用形影不离。而自从 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Satya_Nadella">某阿三</a> 当上 CEO 之后更是砍掉了 Windows 测试部门转而发展 Azure，以至于从 Windows 10 开始，Windows 就像一团剪不断理还乱的乱麻，使用及其糟心。而我也是深受其折磨，却又一直抱着“又不是不能用”的心态继续凑合着用，但近日我的笔记本蓝牙模块频频故障，不论是卸载设备还是重装驱动都无法彻底解决问题，终于我忍无可忍，决定放弃 Windows 系统，转而投入 GNU/Linux 的怀抱。</p>
+<h2 id="硬件参数"><a href="#硬件参数" class="headerlink" title="硬件参数"></a>硬件参数</h2><blockquote>
+<p>型号：华硕 X450JB<br>CPU：Intel Core i5-4200H<br>独立显卡：NVIDIA GeForce 940M<br>内存：4GB DDR3L 1600 ×2<br>硬盘：500G SATA SSD</p>
+</blockquote>
+<p>虽然硬件不咋地，但是它省电啊！我拆机之后才发现这笔记本的电池就只是 4 个 18650 电芯串联起来……</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="系统选择"><a href="#系统选择" class="headerlink" title="系统选择"></a>系统选择</h3><p>我平常在服务器上使用的都是 Debian，所以肯定是选用 Debian 来安装。至于为什么用 Debian 而不用更主流的 Ubuntu，是因为它是目前唯一一个还在使用 GNU/Linux 而不是 Linux 作为后缀的主流发行版 <del>（虽然大部分的 Debian 都运行在非自由的固件上，而且 Debian 社群自己也在维护着非自由库）</del>。但是选择桌面环境的时候我犯难了：我从没用过带桌面环境的 GNU/Linux 啊！Debian 支持 <em><strong>GNOME</strong></em>、<em><strong>KDE</strong></em>、<em><strong>LXDE</strong></em>、<em><strong>Xfce</strong></em>、<em><strong>Cinnamon</strong></em> 还有 <em><strong>MATE</strong></em> 环境，这让本选择恐惧症患者左右为难。<del>我把所有的桌面环境都装了一遍之后，</del> 想来想去，还是选择了 KDE 桌面环境，主要是因为它相对于 GNOME 桌面环境来说拥有 Windows 用户熟悉的设计风格，更容易上手，同时也比其他的桌面环境可定义性要高。</p>
+<h3 id="正式安装"><a href="#正式安装" class="headerlink" title="正式安装"></a>正式安装</h3><p>在 <a target="_blank" rel="noopener" href="https://www.debian.org/download">下载页面</a> 下载好网络安装版镜像之后使用 <a target="_blank" rel="noopener" href="https://rufus.ie/">Rufus</a> 或者 <a target="_blank" rel="noopener" href="https://www.balena.io/etcher/">balenaEtcher</a> 烧录进移动存储设备中，然后不拔除设备重启，在开机界面狂按ESC键选择设备就能进入安装界面了。</p>
+<p>具体安装过程忘记截图了，不过全程都是图形界面，十分简单易懂。而且顺带一提 Live CD 版使用的是 Calamares 安装程序，代替了 Debian 安装程序，对普通用户更友好。</p>
+<h3 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h3><h4 id="桌面"><a href="#桌面" class="headerlink" title="桌面"></a>桌面</h4><div align="center">
+<img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_KDE_Plasma_desktop_screenshot.png" alt="Debian KDE Plasma 桌面">
+<div style="color: grey;font-size: small;">桌面</div>
+</div>
+<br>
+<div align="center">
+<img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_KDE_Plasma_desktop_launcher_screenshot.png" alt="打开了程序启动器的 Debian KDE Plasma 桌面">
+<div style="color: grey;font-size: small;">程序启动器</div>
+</div>
+<br>
+<div align="center">
+<img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_KDE_Plasma_desktop_notification_screenshot.png" alt="打开了状态和通知的 Debian KDE Plasma 桌面">
+<div style="color: grey;font-size: small;">通知栏</div>
+</div>
+<br>
+<div align="center">
+<img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_KDE_Plasma_desktop_musicbar_screenshot.png" alt="打开了媒体播放器的 Debian KDE Plasma 桌面">
+<div style="color: grey;font-size: small;">全局媒体播放控制</div>
+</div>
+
+<p>使用的主题是默认的“微风”（Breeze）。全局字体是 <a target="_blank" rel="noopener" href="https://github.com/be5invis/Sarasa-Gothic">更纱黑体</a> 。</p>
+<h3 id="部分预装软件"><a href="#部分预装软件" class="headerlink" title="部分预装软件"></a>部分预装软件</h3><h4 id="Firefox-ESR（延长支持版）"><a href="#Firefox-ESR（延长支持版）" class="headerlink" title="Firefox ESR（延长支持版）"></a>Firefox ESR（延长支持版）</h4><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_Firefox_ESR.png" alt="Debian 上的 Firefox ESR 预览"></p>
+<p>Debian 默认只有 ESR 版本可以安装，当然你也可以使用其他方式（如 <a target="_blank" rel="noopener" href="https://flathub.org/apps/details/org.mozilla.firefox">Flatpak</a> 和 <a target="_blank" rel="noopener" href="https://snapcraft.io/install/firefox/debian">Snap</a> ）安装最新版本的 Firefox。</p>
+<h4 id="Konqueror"><a href="#Konqueror" class="headerlink" title="Konqueror"></a>Konqueror</h4><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_Konqueror.png" alt="Debian 上的 Konqueror 预览"></p>
+<p>默认的网页浏览器，因为不能装扩展，所以我还是乖乖滚来用 Firefox 了。</p>
+<h4 id="LibreOffice-Writer"><a href="#LibreOffice-Writer" class="headerlink" title="LibreOffice Writer"></a>LibreOffice Writer</h4><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_LibreOffice_Writer.png" alt="Debian 上的 LibreOffice Writer 预览"></p>
+<p>预装的 LibreOffice 只附带了 LibreOffice Writer（文字处理）、LibreOffice Math（公式编辑）和 LibreOffice Draw（绘图），需要手动下载 LibreOffice Calc（电子表格）和 LibreOffice Impress（演示文稿）。个人感觉在几个自由的办公套件中 LibreOffice 算是好用的一个。</p>
+<h4 id="Kate"><a href="#Kate" class="headerlink" title="Kate"></a>Kate</h4><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_Kate.png" alt="Debian 上的 Kate 预览"></p>
+<p>默认的文本编辑器，支持大多数编程语言 / 标记语言的语法高亮。</p>
+<h4 id="Juk"><a href="#Juk" class="headerlink" title="Juk"></a>Juk</h4><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_JuK.png" alt="Debian 上的 JuK 预览"></p>
+<p>默认的音乐播放器，功能挺全。</p>
+<h4 id="KDE-Connect"><a href="#KDE-Connect" class="headerlink" title="KDE Connect"></a>KDE Connect</h4><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_KDE_Connect.png" alt="Debian 上的 KDE Connect 预览"></p>
+<p>超级好用的小工具，可以多设备之间互相遥控、远程输入、发送文件、同步通知……等等等等。<br>还支持 <del>（人间之屑）</del> Windows、macOS、Android、SailfishOS 和 Plasma Mobile。</p>
+<h4 id="GNU-图像处理工具（GIMP）"><a href="#GNU-图像处理工具（GIMP）" class="headerlink" title="GNU 图像处理工具（GIMP）"></a>GNU 图像处理工具（GIMP）</h4><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_GIMP.png" alt="Debian 上的 GIMP 预览"></p>
+<p>大名鼎鼎的GIMP，整体体验和 Windows 上的版本没有多少区别。<br>至于为什么没有预装 Krita，个人觉得是因为 Krita 主打数字绘画，并不能像 GIMP 一样作为通用图片编辑器使用，所以才没有预装。</p>
+<h3 id="软件推荐"><a href="#软件推荐" class="headerlink" title="软件推荐"></a>软件推荐</h3><p>GNU/Linux 下也有很多好用的软件，在这里推荐一些。</p>
+<p>排名不分先后。</p>
+<h4 id="VLC"><a href="#VLC" class="headerlink" title="VLC"></a>VLC</h4><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_VLC.png" alt="Debian 上的 VLC 截图，正在播放动画《偶像大师》"></p>
+<p>官方网站：<a target="_blank" rel="noopener" href="https://www.videolan.org/vlc/">www.videolan.org/vlc/</a></p>
+<p>支持平台：GNU/Linux（Debian GNU/Linux · Ubuntu · Mint · openSUSE · Gentoo Linux · Fedora · Arch Linux · Slackware Linux · Red Hat Enterprise Linux）、BSD（FreeBSD · NetBSD · OpenBSD）、Windows（包括Windows Phone）、macOS、Chrome OS、Solaris、QNX、Syllable Desktop、OS/2、Android、iOS</p>
+<p>许可协议：GNU GPLv2 或更新版本（播放器）、GNU LGPLv2.1 或更新版本（引擎）</p>
+<p>无需多言，可能是支持平台最多的媒体播放器。</p>
+<h4 id="Celluloid"><a href="#Celluloid" class="headerlink" title="Celluloid"></a>Celluloid</h4><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_Celluloid.png" alt="Debian 上的 Celluloid 截图，正在播放动画《偶像大师》"></p>
+<p>官方网站：<a target="_blank" rel="noopener" href="https://celluloid-player.github.io/">celluloid-player.github.io</a></p>
+<p>支持平台：GNU/Linux（Debian GNU/Linux · Arch Linux · Fedora · Frugalware · OpenSUSE · Gentoo Linux · Guix · Solus · Ubuntu）</p>
+<p>许可协议：GNU GPLv3</p>
+<p>原名 GNOME MPV，其实就是给 <a target="_blank" rel="noopener" href="https://mpv.io/">MPV</a> 加了个 GTK 的壳，不过这样一来使用就很方便了。</p>
+<h4 id="Kaffeine"><a href="#Kaffeine" class="headerlink" title="Kaffeine"></a>Kaffeine</h4><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_Kaffeine.png" alt="Debian 上的 Kaffeine 预览"></p>
+<p>官方网站：<a target="_blank" rel="noopener" href="https://apps.kde.org/kaffeine/">apps.kde.org/kaffeine/</a></p>
+<p>支持平台：GNU/Linux</p>
+<p>许可协议：GNU GPLv2 或更新版本</p>
+<p>和KDE环境下预装的 <a target="_blank" rel="noopener" href="https://apps.kde.org/dragonplayer/">Dragon Player</a> 同属 KDE 开发，但是 Kaffeine 更像是光盘播放器，甚至可以播放数字电视 <del>（前提是你要有源）</del>。</p>
+<h4 id="Kdenlive"><a href="#Kdenlive" class="headerlink" title="Kdenlive"></a>Kdenlive</h4><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_Kdenlive.png" alt="Debian 上的 Kdenlive 预览"></p>
+<p>官方网站：<a target="_blank" rel="noopener" href="https://kdenlive.org/">kdenlive.org</a></p>
+<p>支持平台：GNU/Linux、FreeBSD、Windows、macOS</p>
+<p>许可协议：GNU GPLv2 或更新版本</p>
+<p>我一直在用的剪辑软件，导出时调用的是ffmpeg <del>，比Pr不知高到哪里去了</del>。</p>
+<h4 id="Aegisub"><a href="#Aegisub" class="headerlink" title="Aegisub"></a>Aegisub</h4><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_Aegisub.png" alt="Debian 上的 Aegisub 预览"></p>
+<p>官方网站：<a target="_blank" rel="noopener" href="http://aegisub.org/">aegisub.org</a></p>
+<p>支持平台：GNU/Linux、FreeBSD、Windows、macOS</p>
+<p>许可协议：3-clause BSD License</p>
+<p>这个不用过多介绍了，只要做过字幕的都听说过。</p>
+<h3 id="Krita"><a href="#Krita" class="headerlink" title="Krita"></a>Krita</h3><p><img src="https://cdn.jsdelivr.net/gh/kisaragichihaya/nakanishi.me@img/2021/Debian_Krita.png" alt="Debian 上的 Krita 预览"></p>
+<p>官方网站：<a target="_blank" rel="noopener" href="https://krita.org/">krita.org</a></p>
+<p>支持平台：GNU/Linux、FreeBSD、Windows、macOS、Chrome OS、Android</p>
+<p>许可协议：GPLv3</p>
+<p>前面说 GIMP 的时候已经提到了 Krita，其实 Krita 也是我一直在用的数字绘画软件。作为数字绘画软件中为数不多的自由软件，Krita 只凭“自由”这一点就已经做得很好了。而软件本身功能也很完善，甚至还有日本动画专用的模板，这点必须点赞！不过我画技实在太烂，还是不放绘图过程的截图了 <del>（事实证明一个好工具也不能改变自己菜的事实）</del>。但有一点需注意：如果直接从自带的软件商店 Discover 里安装的话默认是没有中文的，需要补充安装 <code>krita-l10n</code> 这个包。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"> ~ $ sudo apt install krita-l10n -y</span><br><span class="line">正在读取软件包列表... 完成</span><br><span class="line">正在分析软件包的依赖关系树... 完成</span><br><span class="line">正在读取状态信息... 完成                 </span><br><span class="line">下列【新】软件包将被安装：</span><br><span class="line">  krita-l10n</span><br><span class="line">升级了 0 个软件包，新安装了 1 个软件包，要卸载 0 个软件包，有 0 个软件包未被升级。</span><br><span class="line">需要下载 2,495 kB 的归档。</span><br><span class="line">解压缩后会消耗 17.5 MB 的额外空间。</span><br><span class="line">获取:1 https://deb.debian.org/debian stable/main amd64 krita-l10n all 1:4.4.2+dfsg-1 [2,495 kB]</span><br><span class="line">已下载 2,495 kB，耗时 1秒 (3,538 kB/s)</span><br><span class="line">正在选中未选择的软件包 krita-l10n。</span><br><span class="line">(正在读取数据库 ... 系统当前共安装有 313340 个文件和目录。)</span><br><span class="line">准备解压 .../krita-l10n_1%3a4.4.2+dfsg-1_all.deb  ...</span><br><span class="line">正在解压 krita-l10n (1:4.4.2+dfsg-1) ...</span><br><span class="line">正在设置 krita-l10n (1:4.4.2+dfsg-1) ...</span><br></pre></td></tr></table></figure>
+
+<p>这样就能在设置中选择中文了。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>对于大多数人来说，碰到和我一样的问题的时候一般会选择把蓝牙驱动修好，而不是像我一样选择更换操作系统。但对于我来说，这次事件更像是导火索：Windows 封闭的环境、微软放置不管的态度使得 Windows 光是让普通用户日常使用就叫苦不迭，那与其再继续忍受难用的 Windows，为什么不选择拥抱自由开放的 GNU/Linux 呢？</p>
+  </article>
+  <aside class="table-content" id="site-toc">
+  <div class="table-content-title">
+    <i class="fa fa-arrow-right fa-lg" id="site-toc-hide-btn"></i>
+    <span>目录</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A1%AC%E4%BB%B6%E5%8F%82%E6%95%B0"><span class="toc-text">硬件参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E9%80%89%E6%8B%A9"><span class="toc-text">系统选择</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A3%E5%BC%8F%E5%AE%89%E8%A3%85"><span class="toc-text">正式安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%84%E8%A7%88"><span class="toc-text">预览</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A1%8C%E9%9D%A2"><span class="toc-text">桌面</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E5%88%86%E9%A2%84%E8%A3%85%E8%BD%AF%E4%BB%B6"><span class="toc-text">部分预装软件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Firefox-ESR%EF%BC%88%E5%BB%B6%E9%95%BF%E6%94%AF%E6%8C%81%E7%89%88%EF%BC%89"><span class="toc-text">Firefox ESR（延长支持版）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Konqueror"><span class="toc-text">Konqueror</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LibreOffice-Writer"><span class="toc-text">LibreOffice Writer</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Kate"><span class="toc-text">Kate</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Juk"><span class="toc-text">Juk</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#KDE-Connect"><span class="toc-text">KDE Connect</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GNU-%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7%EF%BC%88GIMP%EF%BC%89"><span class="toc-text">GNU 图像处理工具（GIMP）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90"><span class="toc-text">软件推荐</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#VLC"><span class="toc-text">VLC</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Celluloid"><span class="toc-text">Celluloid</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Kaffeine"><span class="toc-text">Kaffeine</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Kdenlive"><span class="toc-text">Kdenlive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Aegisub"><span class="toc-text">Aegisub</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Krita"><span class="toc-text">Krita</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-text">后记</span></a></li></ol>
+  </div>
+</aside>
+  
+    <aside class="passage-copyright">
+      <div>本文作者: 中西 Nakanishi</div>
+      
+        <div>
+          原文链接: 
+          <a href="" target="_blank">https://nakanishi.me/laptop-system-migration-notes/</a>
+        </div>
+      
+      <div>
+        版权声明: 本博客所有文章除特别声明外, 均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请在显著位置注明出处并以相同方式共享！
+      </div>
+    </aside>
+  
+  
+    <div class="passage-tags">
+     
+      <a href="/tags/%E5%8E%9F%E5%88%9B/"><i class="fa fa-tags"></i>原创</a>
+     
+      <a href="/tags/%E9%9A%8F%E7%AC%94/"><i class="fa fa-tags"></i>随笔</a>
+    
+    </div>
+  
+</div>
+
+    </main>
+    
+      
+<div class="site-comment-contanier" data-plateform="leancloud">
+  
+    <p id="site-comment-info">
+      <i class="fa fa-spinner fa-spin"></i> 评论加载中
+    </p>
+    <div id="site-comment"></div>
+  
+</div>
+    
+    <div class="site-footer-wrapper">
+  <footer class="site-footer">
+    
+      
+        <div class="site-footer-col">
+          <h5 class="site-footer-title">特别推荐</h5>
+          
+            <span class="site-footer-item">
+              <a href="https://ikenkyu.net" target="_blank">偶研记</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="https://haruka.nakanishi.me" target="_blank">ハルカ from ナカシマ</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="https://hub.kisaragi.ml" target="_blank">Kisaragi Hub</a>
+            </span>
+          
+        </div>
+      
+        <div class="site-footer-col">
+          <h5 class="site-footer-title">工具箱</h5>
+          
+            <span class="site-footer-item">
+              <a href="https://segmentfault.com/markdown" target="_blank">Markdown 编辑器语法指南</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="https://developer.mozilla.org/zh-CN/docs/Web" target="_blank">MDN Web Docs</a>
+            </span>
+          
+        </div>
+      
+        <div class="site-footer-col">
+          <h5 class="site-footer-title">找到我</h5>
+          
+            <span class="site-footer-item">
+              <a href="https://github.com/KisaragiChihaya" target="_blank">GitHub</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="https://gitlab.com/KisaragiChihaya" target="_blank">GitLab</a>
+            </span>
+          
+        </div>
+      
+    
+    <div class="site-footer-info">
+      <i class="fa fa-clock-o"></i> 本站已稳定运行<span id="site-time"></span>
+    </div>
+    
+      <div class="site-footer-info">
+        <i class="fa fa-paw"></i> 您是本站第 <span id="site-count"></span> 位访客
+      </div>
+    
+    
+      <div class="site-footer-info">
+        <i class="fa fa-at"></i> 中西 Nakanishi
+      </div>
+    
+    <div class="site-footer-info">
+      <i class="fa fa-copyright"></i> 
+      2020 <a href="https://nakanishi.me">ナカシマ</a>.
+      Use <a href="https://github.com/dongyuanxin/theme-ad/" target="_blank">Theme-AD</a>.
+      All rights reserved.
+    </div>
+  </footer>
+</div>
+    <div id="site-layer" style="display:none;">
+  <div class="site-layer-content">
+    <div class="site-layer-header">
+      <span class="site-layer-header-title" id="site-layer-title"></span>
+      <i class="fa fa-close" id="site-layer-close"></i>
+    </div>
+    <div class="site-layer-body" id="site-layer-container">
+      <div class="site-layer-input" id="site-layer-search" style="display: none;">
+        <div class="site-layer-input-choose">
+          <a href="javascript:void(0);" title="Change Search Engine">Google</a>
+        </div>
+        <input type="text">
+        <i class="fa fa-search"></i>
+      </div>
+      
+      <div id="site-layer-welcome" style="display:none;"></div>
+    </div>
+  </div>
+</div>
+    
+
+<div class="bottom-bar">
+  <div class="bottom-bar-left">
+    <a href="javascript:void(0);" data-enable="false">
+      <i class="fa fa-arrow-left"></i>
+    </a>
+    <a href="/backup-website-to-gitlab/" data-enable="true">
+      <i class="fa fa-arrow-right"></i>
+    </a>
+  </div>
+  <div class="bottom-bar-right">
+    <a href="javascript:void(0);" data-enable="true" id="site-toc-show-btn">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+      <a href="#site-comment" data-enable="true">
+        <i class="fa fa-commenting"></i>
+      </a>
+    
+    <a href="javascript:void(0);" id="site-toggle-share-btn">
+      <i class="fa fa-share-alt"></i>
+    </a>
+    
+    <a href="javascript:void(0);" id="back-top-btn">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+</div>
+    <div id="share-btn">
+  
+    <a id="share-btn-twitter" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-twitter"></i>
+    </a>
+  
+  
+    <a id="share-btn-facebook" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-facebook"></i>
+    </a>
+  
+  
+    <a id="share-btn-weibo" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-weibo"></i>
+    </a>
+  
+  
+    <a id="share-btn-qq" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-qq"></i>
+    </a>
+  
+  
+    <a id="share-btn-wechat" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-wechat"></i>
+    </a>
+  
+</div>
+    
+
+
+
+
+
+    
+  </body>
+</html>
